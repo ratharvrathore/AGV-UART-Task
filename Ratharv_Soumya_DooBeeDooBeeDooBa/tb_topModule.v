@@ -110,21 +110,75 @@ module tb_topModule;
         // Send UART frames (goes into RxD inside DUT)
         uart_send_byte(8'h55);  // 01010101
         uart_send_byte(8'hAA);  // 10101010
-        uart_send_byte(8'h40);  // 00001111
-        uart_send_byte(8'hF0);  // 11110000
-        uart_send_byte(8'hAA);
-        uart_send_byte(8'h90);
-        uart_send_byte(8'h15);
-        uart_send_byte(8'h44);
+        uart_send_byte(8'h21);  // 00001111
+        uart_send_byte(8'hF6);  // 11110000
+        uart_send_byte(8'h68);
+        uart_send_byte(8'h0B);
+        uart_send_byte(8'hB8);
+        uart_send_byte(8'h94);
+        uart_send_byte(8'hBC);
         uart_send_byte(8'h04);
+        uart_send_byte(8'h28);
+        uart_send_byte(8'hE2);
+        uart_send_byte(8'h8D);
+        uart_send_byte(8'hF1);
+        uart_send_byte(8'hAB);
+        uart_send_byte(8'h36);
+        uart_send_byte(8'h32);
+        uart_send_byte(8'h01);
+        uart_send_byte(8'hAD);
+        uart_send_byte(8'hB7);
+        uart_send_byte(8'h4C);
+        uart_send_byte(8'hDB);
+        uart_send_byte(8'h86);
         uart_send_byte(8'h44);
-        uart_send_byte(8'h04);
-        uart_send_byte(8'h44);
-        uart_send_byte(8'h04);
-        uart_send_byte(8'h44);
-        uart_send_byte(8'h04);
-        uart_send_byte(8'h44);
-        uart_send_byte(8'h04);
+        uart_send_byte(8'h18);
+        uart_send_byte(8'hBD);
+        uart_send_byte(8'hE6);
+        uart_send_byte(8'h7D);
+        uart_send_byte(8'hF3);
+        uart_send_byte(8'h01);
+        uart_send_byte(8'h3B);
+        uart_send_byte(8'h23);
+        uart_send_byte(8'h0D);
+        uart_send_byte(8'h01);
+        uart_send_byte(8'hB2);
+        uart_send_byte(8'h00);
+        uart_send_byte(8'h96);
+        uart_send_byte(8'hE7);
+        uart_send_byte(8'h3A);
+        uart_send_byte(8'hA6);
+        uart_send_byte(8'h0B);
+        uart_send_byte(8'h03);
+        uart_send_byte(8'hED);
+        uart_send_byte(8'h02);
+        uart_send_byte(8'hCA);
+        uart_send_byte(8'h79);
+        uart_send_byte(8'hC0);
+        uart_send_byte(8'h03);
+        uart_send_byte(8'h8B);
+        uart_send_byte(8'hBA);
+        uart_send_byte(8'h72);
+        uart_send_byte(8'h00);
+        uart_send_byte(8'hE4);
+        uart_send_byte(8'h03);
+        uart_send_byte(8'hA1);
+        uart_send_byte(8'h5E);
+        uart_send_byte(8'h99);
+        uart_send_byte(8'h17);
+        uart_send_byte(8'hFC);
+        uart_send_byte(8'h2A);
+        uart_send_byte(8'h25);
+        uart_send_byte(8'h00);
+        uart_send_byte(8'h62);
+        uart_send_byte(8'h01);
+        uart_send_byte(8'hB7);
+        uart_send_byte(8'h80);
+        uart_send_byte(8'h45);
+        uart_send_byte(8'h3C);
+        uart_send_byte(8'h49);
+        uart_send_byte(8'h02);
+        uart_send_byte(8'h3E);
 
 
         // wait for processing and TxD output

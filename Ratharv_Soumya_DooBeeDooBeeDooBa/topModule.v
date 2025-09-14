@@ -75,15 +75,15 @@ module distanceProcess (
     always @(posedge(clk) or posedge(rst) or posedge(rst_state)) begin
         if(rst|rst_state) begin
             headCheck <= 2'b00;
-            headerA <= 8'hAA;
-            headerB <= 8'h55;
+            headerA <= 8'h55;
+            headerB <= 8'hAA;
             rst_state <= 1'b0;
             counter1 <= 3'b000;
             counter2 <= 8'h00;
             microCounter <= 1'b0;
             //clockCheck <= 1'b0;
             AtHand <= 16'h0000;
-            obs_distance <= 16'h0080;
+            obs_distance <= 16'h0400;
             max_distance <= 16'h0000;
             min_distance <= 16'hFFFF;
             obs_alert <= 16'h0000;
@@ -359,7 +359,7 @@ module RxD (
         end
         1: begin
             if(bit_counter<8) begin
-            parallel_data[7-bit_counter] <= serial_input;
+            parallel_data[bit_counter] <= serial_input;
             bit_counter <= bit_counter+1;
             end
         end
